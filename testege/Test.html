@@ -280,18 +280,29 @@
     <div style="text-align: center;">Правильных ответов: <span id="score">0</span> из 10</div>
     
     <script>
-        // Правильные ответы
+       
+        let t=document.getElementById('timer')
+
+        setInterval(timer,1000);
+
+        function timer()
+        {
+            t.textContent=new Date();
+        }
+
+
+
         const correctAnswers = {
-            a1: '2', // Юпитер
-            a2: '2', // 1939
-            a3: '3', // Кислород
-            a4: '2', // Достоевский
-            a5: '3', // Ньютон
-            a6: '3', // Тихий
-            a7: '2', // Сила тока
-            a8: '3', // Канберра
-            a9: '2', // 206
-            a10: '3' // Ubuntu
+            a1: '2', 
+            a2: '2', 
+            a3: '3', 
+            a4: '2', 
+            a5: '3', 
+            a6: '3', 
+            a7: '2', 
+            a8: '3', 
+            a9: '2', 
+            a10: '3' 
         };
 
         function Check() {
